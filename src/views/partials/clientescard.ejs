@@ -1,0 +1,86 @@
+<% clientes.forEach(function(clientes) { %>
+<div class="card mb">
+  <div class="row">
+    <div class="col-md-2">
+      <br>
+      <br>
+      <h1 class="text-center">
+        <%= clientes.nombre %>
+      </h1>
+      <h6 class="text-center">
+        77.380.380-5
+      </h6>
+    </div>
+    <div class="col-md-8">
+      <br>
+      <div class="row">
+        <div class="col-6 col-sm-2">
+          <p class="fw-bold">GERENTE</p>
+          <H6><%= clientes.gerente %>
+          </H6>
+        </div>
+        <div class="col-6 col-sm-2">
+          <p class="fw-bold">PROFESIONAL</p>
+          <H6><%= clientes.profesional   %>
+          </H6>
+        </div>
+        <div class="col-6 col-sm-2">
+          <p class="fw-bold">MAIL</p>
+          <H6><%= clientes.mail %>
+          </H6>
+        </div>
+        <div class="col-6 col-md-2">
+          <p class="fw-bold">TELEFONO</p>
+          <H6><%= clientes.telefono %>
+          </H6>
+        </div>
+        <div class="col-6 col-md-2">
+          <p class="fw-bold">DIRRECION</p>
+          <H6><%= clientes.direccion %>
+          </H6>
+        </div>
+        <div class="col-6 col-md-2">
+          <p class="fw-bold">VISITA</p>
+          <H6><%= clientes.visita_primaria %>
+          </H6>
+        </div>
+        <div class="col-6 col-md-2">
+          <p class="fw-bold">CAPACITACIÓN</p>
+          <H6><%= clientes.capacitacion %>
+          </H6>
+        </div>
+        <div class="col-6 col-md-2">
+          <p class="fw-bold">ASESORÍA</p>
+          <H6><%= clientes.asesoria %>
+          </H6>
+        </div>
+        <div class="col-md-3">
+          <p class="fw-bold">ACTIVIDAD DE MEJORA</p>
+          <H6><%= clientes.activida_mejora %>
+          </H6>
+        </div>
+        <div class="col-md-3">
+          <p class="fw-bold">ACCIDENTABILIDAD</p>
+          <H6><%= clientes.accidentabilidad %>
+          </H6>
+        </div>
+
+
+
+      </div>
+      <div class="card-body">
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="http://localhost:4000/crearvisita">Crear Visita</a>
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="http://localhost:4000/crearcapacitacion">Agregar Capacitacion</a>
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="http://localhost:4000/crearasesoria">Agregar Asesoria</a>
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="">Agregar Actividad de Mejora</a>
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="http://localhost:4000/crearchecklist">CheckList</a>
+          <a class="btn btn-dark" style="background-color: #4E16D1;" href="http://localhost:4000/verasesorias">Caso de Asesoria</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<% }); %>
